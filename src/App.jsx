@@ -3,14 +3,12 @@ import './App.css'
 import Task from './Task.jsx'
 import AddNew from './AddNew.jsx'
 import Filter from './Filter.jsx'
-import { tasks } from './data.js'
 
 function App() {
-  const initialTasks = tasks.reverse()
   const [count, setCount] = useState(0)
-  const [isLoaded, setIsLoaded] = useState(true)
+  const [isLoaded, setIsLoaded] = useState(false)
   const [filterValue, setFilterValue] = useState(0)
-  const [taskList, setTasks] = useState(initialTasks)
+  const [taskList, setTasks] = useState([])
 
   let nextId = taskList.length+1
   let filteredList = []
