@@ -6,7 +6,10 @@ export default function Task({data, deleteHandler, toggleHandler}) {
 
 	return (
 		<div className={strCompleted}>
-			<div>Done<input type="checkbox" checked={data.completed} onChange={() => toggleHandler(data.id)}/></div>
+			<div className="checkbox">
+				<input type="checkbox" id={"checkbox"+data.id} checked={data.completed} onChange={() => toggleHandler(data.id)} />
+				<label for={"checkbox"+data.id}></label>
+			</div>
 			<div className="task-title">
           		{data.title}
         	</div>
