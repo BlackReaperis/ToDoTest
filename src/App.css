@@ -47,6 +47,10 @@
   background: url('assets/close.png');
 }
 
+.close-button:hover {
+  background: url('assets/close-hover.png');
+}
+
 .new-task-title {
   font-size: 1.2em;
   font-weight: bold;
