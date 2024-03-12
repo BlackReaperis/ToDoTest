@@ -1,3 +1,10 @@
+# Running instructions
+Copy to [folderName]
+
+cd [folderName]
+npm install
+npm run dev
+
 # Test task
 
 Task Description:
